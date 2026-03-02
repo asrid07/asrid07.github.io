@@ -1,0 +1,15 @@
+{% if site.adsense_client %}
+<!-- Google AdSense Auto Ads -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense_client }}" crossorigin="anonymous"></script>
+<!-- 
+    AdSense Auto Ads are enabled. Google will automatically 
+    place ads in optimal locations on your pages.
+    
+    To get your adsense_client ID:
+    1. Go to https://www.google.com/adsense
+    2. Sign up / Sign in
+    3. Add your site URL
+    4. Get your Publisher ID (format: ca-pub-XXXXXXXXXXXXXXXX)
+    5. Add it to _config.yml: adsense_client: "ca-pub-XXXXXXXXXXXXXXXX"
+-->
+{% endif %}

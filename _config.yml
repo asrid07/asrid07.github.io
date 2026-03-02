@@ -1,0 +1,54 @@
+# TrendPulse Daily - Blog Configuration
+title: "TrendPulse Daily"
+description: "Your daily pulse on trending topics — Technology, Finance, Health, Science, Business & more"
+author: "TrendPulse Team"
+url: "https://asrid07.github.io" # GitHub Pages URL
+baseurl: "" # Leave empty for root, or set to /repo-name
+
+# Build Settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Monetization - Fill these after signing up
+# Google AdSense (get from https://www.google.com/adsense)
+adsense_client: "" # e.g., ca-pub-1234567890123456
+
+# Google Analytics (get from https://analytics.google.com)
+google_analytics: "" # e.g., G-XXXXXXXXXX
+
+# Affiliate IDs (used by article generator)
+affiliate_links:
+  amazon_tag: "" # e.g., yourtag-21 (Amazon Associates)
+  hostinger_ref: "" # e.g., 1YOURID (Hostinger)
+  udemy_ref: "" # Your Udemy affiliate link code
+  coursera_ref: "" # Your Coursera affiliate link code
+  zerodha_ref: "" # e.g., your-ref-code (Zerodha)
+
+# Content Settings
+permalink: /:year/:month/:day/:title/
+paginate: 10
+show_excerpts: true
+
+# SEO Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "TrendPulse Team"
+
+# Exclude from build
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - "*.py"
+  - "*.json"
+  - "*.bat"
