@@ -48,6 +48,8 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+  - scripts/
+  - .github/
   - node_modules
   - "*.py"
   - "*.json"
